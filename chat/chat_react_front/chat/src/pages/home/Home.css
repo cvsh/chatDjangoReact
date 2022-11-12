@@ -1,0 +1,89 @@
+
+@import '~antd/dist/antd.css';
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+
+.loginform__enter-button {
+    background-color: #5D5FEF;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.home__create-chat-button {
+    background-color: #5D5FEF;
+    border-radius: 5px;
+    font-size: 14px;
+    right: 5.5%;
+    position: absolute;
+    margin-top: 6.5px;
+    width: 115px;
+    color: #ffffff;
+}
+
+.home__rooms-item {
+    display: block;
+    background-color: #7879F1;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px 0px 10px 13px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.home__rooms-item-i {
+    float: right;
+    margin: 5px 10px 0px 0px;
+}
+
+.home__room-input-area {
+    width: 100%;
+    margin-top: 3px;
+}
+
+.home__room-input {
+    border-radius: 5px;
+    height: 47px;
+    font-size: 14px;
+}
+
+.home__log-out {
+    background-image: url('./img/logout.png');
+    background-repeat: no-repeat!important;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 17px;
+}
+
+.card {
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 1px #E5E5EA;
+    border-radius: 10px;
+    width: 500px;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .card {
+        width: 100%;
+    }
+    .home__log-out {
+        right: 7%
+    }
+    .home__create-chat-button {
+        right: 8.5%;
+        font-size: 3vw;
+    }
+    .home__room-input {
+        font-size: 3vw;
+    }
+  }
+

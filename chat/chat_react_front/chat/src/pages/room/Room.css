@@ -1,0 +1,213 @@
+
+@import '~antd/dist/antd.css';
+
+.room__container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+
+.chat__send-message-input {
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+}
+
+.chat__send-message-input-actual {
+    width: 500px;
+    margin-left: -24px;
+    bottom: 0;
+    margin-top: 10px;
+    position: fixed;
+}
+
+.chat__message-current-user {
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #5D5FEF;
+    max-width: 50%;
+    height: auto;
+    text-align: left;
+    color: #ffffff;
+    margin-left: calc(100% - 243px);
+    border-radius: 6px;
+    word-wrap: break-word;
+}
+
+.chat__message-current-user::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #5D5FEF;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: 209px;
+}
+
+.chat__message-another-user {
+    background-color: #F2F2F7;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 50%;
+    text-align: left;
+    border-radius: 6px;
+    height: auto;
+    color: #2C2C2E;
+    word-wrap: break-word;
+}
+
+.chat__message-another-user::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #F2F2F7;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: -15px;
+    color: #2C2C2E;
+}
+
+.chat__exit {
+    position: absolute;
+    right: 23px;
+    top: 15px;   
+}
+
+.chat__send-button {
+    background-color: #ffffff;
+    bottom: 9px;
+    position: fixed;
+    margin-left: 425px;
+    border: none;
+    height: 30px;
+    width: 50px;
+}
+
+.chat__num-users {
+    z-index: 9999;
+    color: #666668;
+    margin-top: -55px;
+    margin-bottom: 13px;
+}
+
+.room_log-out {
+    background-image: url('./img/logout.png');
+    background-repeat: no-repeat!important;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 23px;
+}
+
+.room__card {
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 1px #E5E5EA;
+    width: 500px;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.room_chat-area-scroll {
+    height: 85vh;
+    overflow: auto;
+    flex-direction: column-reverse;
+    display: flex
+}
+
+.chat__read-mark {
+    -webkit-transform: scaleX(-1) rotate(-35deg);
+    transform: scaleX(-1) rotate(-35deg);
+    position: relative;
+    width: 15px;
+    color: #EF5DA8;
+    float: right;
+    top: 5px;
+}
+
+.chat__read-mark-next {
+    -webkit-transform: scaleX(-1) rotate(-35deg);
+    transform: scaleX(-1) rotate(-35deg);
+    position: relative;
+    width: 15px;
+    color: #EF5DA8;
+    float: right;
+    top: 5px;
+    left: 11px;
+}
+
+.chat__time {
+    float: right;
+    left: 10px;
+    position: relative;
+    top: 11px;
+    font-size: 11px;
+}
+
+.chat__time-au {
+    float: right;
+    position: relative;
+    top: 11px;
+    font-size: 11px;
+    color: #666668;
+}
+
+.chat__date {
+    color: #666668;
+    margin-bottom: 17px;
+}
+
+.room__card .ant-card-head-title {
+    height: 70px;
+}
+
+.room_chat-area-scroll::-webkit-scrollbar {
+    width: 0.3em;
+}
+ 
+.room_chat-area-scroll::-webkit-scrollbar-thumb {
+    background-color: #F2F2F7;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 767px){
+    .chat__message-current-user {
+        margin-left: calc(100% - 185px);
+        max-width: 170px;
+    }
+
+    .chat__message-current-user::after {
+        left: 155px;
+    }
+
+    .room__card {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .room_chat-area-scroll {
+        height: 79vh;
+    }
+
+    .chat__send-message-input {
+        width: 100%
+    }
+    
+    .chat__send-message-input-actual {
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .chat__send-button {
+        margin-left: calc(100% - 70px);
+    }
+  }

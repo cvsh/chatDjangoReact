@@ -1,0 +1,41 @@
+
+@import '~antd/dist/antd.css';
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.loginform__item {
+    margin-bottom: 10px;
+}
+
+.loginform__input {
+    border-radius: 5px;
+    font-size: 14px;
+    height: 49px;
+}
+
+.loginform__enter-button {
+    background-color: #5D5FEF;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 113px;
+    height: 45px;
+}
+
+.card {
+    text-align: center;
+    box-shadow: inset 0px 0px 0px 1px #E5E5EA;
+    border-radius: 10px;
+    width: 500px;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .card {
+        width: 90%;
+    }
+  }
